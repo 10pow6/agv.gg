@@ -1,612 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AGV — Alchera Global Venture. A community of friends building, creating, and exploring together in Earth 2.">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Bootstrap Font Icon CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- Core CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="./assets/css/main.css" rel="stylesheet">
-    <title>Alchera Global Venture</title>
+    <title>AGV — An Earth 2 Community</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar-spy" data-bs-offset="77.64">
-    <nav id="navbar-spy" class="navbar fixed-top navbar-expand-lg bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/img/logo.png" width="250" class="logo" alt="logo">
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="nav-brand" href="index.html">
+          <img src="./assets/img/logo.png" alt="AGV — Alchera Global Venture">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="#home">Home</a>
-            <a class="nav-link" href="#vision">Vision</a>
-            <a class="nav-link" href="#earth2">Earth 2</a>
-            <a class="nav-link" href="#vampire">Vampire Wars</a>
-            <a class="nav-link" href="#partners">Partners</a>
-            <a class="nav-link" href="events.html">Events</a>
-            <a class="nav-link" href="releases.html">Releases</a>
-            <a class="nav-link" href="team.html">Team</a>
-            <a class="nav-link-icon" href="https://discord.com/invite/dg3PkWGyKB" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-discord"></i>
-            </a>
-            <a class="nav-link-icon" href="https://www.youtube.com/channel/UCBYm6WwwbHh7Bt23j9K0Kyw" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-youtube"></i>
-            </a>
-          </div>
+        <div class="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="#colonies">Colonies</a>
+          <a href="#codex">Codex</a>
+          <a href="#partners">Partners</a>
+          <a href="events.html">Events</a>
+          <a href="releases.html">Releases</a>
+          <a href="team.html">Team</a>
+          <a class="nav-icon" href="https://www.youtube.com/channel/UCBYm6WwwbHh7Bt23j9K0Kyw" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a class="btn btn-primary btn-sm nav-cta" href="https://discord.com/invite/dg3PkWGyKB" target="_blank" rel="noopener noreferrer">Join Discord</a>
         </div>
-      </div>
-    </nav>
-    <video autoplay loop muted id="videoBG" poster="./assets/img/poster.png">
-      <source src="./assets/vid/bg_agv_trailer.mp4" type="video/mp4">
-    </video>
-    <!-- Masthead-->
-    <header class="masthead" id="home">
-      <div class="container d-flex h-100 align-items-center">
-        <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0 text-uppercase">
-            <span class="colored-red">/</span> AGV <span class="colored-red">\</span>
-          </h1>
-          <p class="hero-tags">Welcome to your future.</p>
-          <p id="chevron-down">
-            <i class="bi bi-chevron-bar-down"></i>
-          </p>
-        </div>
-      </div>
+      </nav>
     </header>
-    <!-- About-->
-    <section class="about-section text-center" id="vision">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">
-              <span class="colored-red">\\</span> Our Vision <span class="colored-red">//</span>
-            </h2>
-            <p class="text-white-50"> Together, we will shape the future. <br>
-              <br> AGV brings together the brightest minds to help drive our future. Our group is composed of engineers, artists, quants, and visionaires.
-            </p>
-          </div>
-        </div>
-        <img class="img-fluid" src="assets/img/100tiles.png" alt="100 tiles mockup">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <p></p>
-          </div>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <video class="hero-video" autoplay loop muted playsinline poster="./assets/img/poster.png">
+        <source src="./assets/vid/bg_agv_trailer.mp4" type="video/mp4">
+      </video>
+      <div class="hero-content">
+        <p class="hero-kicker">Alchera Global Venture</p>
+        <h1>AGV</h1>
+        <p class="hero-tagline">A community of friends building, creating, and exploring together in Earth&nbsp;2.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://discord.com/invite/dg3PkWGyKB" target="_blank" rel="noopener noreferrer">Join the Community</a>
+          <a class="btn btn-ghost" href="#colonies">Explore Our Colonies</a>
         </div>
       </div>
     </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about-grid reveal">
+        <div class="about-copy">
+          <p class="eyebrow">Who We Are</p>
+          <h2>An Earth 2 community, first and always.</h2>
+          <p>AGV is a group of Earth 2 players who became friends — engineers, artists, quants, and dreamers scattered across the globe, united by one virtual planet.</p>
+          <p>We build colonies, craft tools, share intel, and help new players find their footing. No hype, no gatekeeping — just people who genuinely enjoy shaping the new earth together.</p>
+        </div>
+        <div class="about-media">
+          <img src="./assets/img/100tiles.png" alt="AGV tile builds in Earth 2">
+        </div>
+      </div>
+    </section>
+
     <!-- Codex -->
-    <section class="projects-section bg-black">
+    <section class="section section-raised" id="codex">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-12 mx-auto">
-            <h2 class="text-white mb-4">
-              <span class="colored-red">\\</span> Our Codex <span class="colored-red">//</span>
-            </h2>
-            <p class="text-white-50"> As travelers in two worlds, we adopt three simple principles: </p>
-          </div>
+        <div class="section-head reveal">
+          <p class="eyebrow">Our Codex</p>
+          <h2>Three simple principles</h2>
+          <p class="lede">As travelers in two worlds, this is how we carry ourselves.</p>
         </div>
-      </div>
-      <div class="box">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-xs-12 pb-5">
-              <div class="box-part text-center">
-                <i class="bi-book" style="font-size: 3.5rem;" aria-hidden="true"></i>
-                <div class="title">
-                  <h3>Truth</h3>
-                </div>
-                <div class="text">
-                  <span>We conduct ourselves honestly. We do not abuse system exploits and practice ethical disclosures. We strive for open and transparent communication.</span>
-                </div>
-              </div>
+        <div class="codex-grid">
+          <div class="codex-card reveal">
+            <div class="codex-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
             </div>
-            <div class="col-lg-4 col-xs-12 pb-5">
-              <div class="box-part text-center">
-                <i class="bi-palette" style="font-size: 3.5rem;" aria-hidden="true"></i>
-                <div class="title">
-                  <h3>Beauty</h3>
-                </div>
-                <div class="text">
-                  <span>We respect the grid. We want to use the new world's territories as canvas for beautiful structures and places to come alive.</span>
-                </div>
-              </div>
+            <h3>Truth</h3>
+            <p>We conduct ourselves honestly. We do not abuse system exploits and practice ethical disclosures. We strive for open and transparent communication.</p>
+          </div>
+          <div class="codex-card reveal">
+            <div class="codex-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="13.5" cy="6.5" r="1"/><circle cx="17.5" cy="10.5" r="1"/><circle cx="8.5" cy="7.5" r="1"/><circle cx="6.5" cy="12.5" r="1"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
             </div>
-            <div class="col-lg-4 col-xs-12 pb-5">
-              <div class="box-part text-center">
-                <i class="bi-suit-heart" style="font-size: 3.5rem;" aria-hidden="true"></i>
-                <div class="title">
-                  <h3>Goodness</h3>
-                </div>
-                <div class="text">
-                  <span>We help each other. As a community, we support new players and keep a good spirit regarding the further progression of the game and community.</span>
-                </div>
-              </div>
+            <h3>Beauty</h3>
+            <p>We respect the grid. We want to use the new world's territories as canvas for beautiful structures and places to come alive.</p>
+          </div>
+          <div class="codex-card reveal">
+            <div class="codex-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></svg>
             </div>
+            <h3>Goodness</h3>
+            <p>We help each other. As a community, we support new players and keep a good spirit regarding the further progression of the game and community.</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Earth 2 -->
-    <section class="projects-section-bg bg-offblack" id="earth2">
+
+    <!-- Colonies -->
+    <section class="section" id="colonies">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">
-              <span class="colored-red">\\</span> Earth 2: Our Colonies <span class="colored-red">//</span>
-            </h2>
-            <br>
-          </div>
+        <div class="section-head reveal">
+          <p class="eyebrow">Earth 2</p>
+          <h2>Our Colonies</h2>
+          <p class="lede">Territories we have claimed, shaped, and opened to the community across the new earth.</p>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/sea_lion.png" style="height:250px;" alt="3d sea lion">
-              <div class="title">
-                <h3>Sea Lion</h3>
-              </div>
-              <div class="text">
-                <span> In the south region of the Falkland Islands lies a pearl. The Sea Lion Island. </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <button class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#seaModal1">Discover</button>
-                    <a href="https://www.youtube.com/watch?v=KNXexau33JM" target="_blank" rel="noopener noreferrer" class="a-btn">Trailer</a>
-                  </div>
-                </div>
-                <div class="row pt-5">
-                  <div class="col-lg-12">
-                    <a href="https://dev.tp.city/sealion" target="_blank" rel="noopener noreferrer">
-                      <img src="./assets/img/teleporter_visual.png" style="height:60px;" alt="globe icon">
-                      <p>
-                        <strong>Warp to E2 Location</strong>
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
+        <div class="colony-grid">
+          <article class="colony-card reveal">
+            <div class="colony-media">
+              <img src="./assets/img/sea_lion.png" alt="Sea lion emblem">
             </div>
-          </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/peach.png" style="height:250px;" alt="3d peach">
-              <div class="title">
-                <h3>Akrotiri "Peach"</h3>
+            <div class="colony-body">
+              <h3>Sea Lion</h3>
+              <p>In the south region of the Falkland Islands lies a pearl: Sea Lion Island.</p>
+              <div class="colony-actions">
+                <button class="btn btn-primary btn-sm" type="button" data-dialog="dialog-sealion">Discover</button>
+                <a class="btn btn-ghost btn-sm" href="https://www.youtube.com/watch?v=KNXexau33JM" target="_blank" rel="noopener noreferrer">Trailer</a>
               </div>
-              <div class="text">
-                <span>On the southern border of the beautiful island of Cyprus lies a massive city.</span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <button class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#peachModal1">Discover</button>
-                    <a href="https://www.youtube.com/watch?v=XAMHa9ZAcXM" target="_blank" rel="noopener noreferrer" class="a-btn">Trailer</a>
-                  </div>
-                </div>
-                <div class="row pt-5">
-                  <div class="col-lg-12">
-                    <a href="https://dev.tp.city/peach" target="_blank" rel="noopener noreferrer">
-                      <img src="./assets/img/teleporter_visual.png" style="height:60px;" alt="globe icon">
-                      <p>
-                        <strong>Warp to E2 Location</strong>
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <a class="warp-link" href="https://e2.me/sealion" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/teleporter_visual.png" alt="">
+                Warp to E2 Location
+              </a>
             </div>
-          </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/elephant.png" style="height:250px;" alt="3d elephant">
-              <div class="title">
-                <h3>Bangui</h3>
-              </div>
-              <div class="text">
-                <span>Large terrains - infinite possibilities. Welcome to our African paradise.</span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <button class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#banguiModal1">Discover</button>
-                    <a href="https://www.youtube.com/watch?v=PLmqm52hsHw" target="_blank" rel="noopener noreferrer" class="a-btn">Trailer</a>
-                  </div>
-                </div>
-                <div class="row pt-5">
-                  <div class="col-lg-12">
-                    <a href="https://dev.tp.city/bangui" target="_blank" rel="noopener noreferrer">
-                      <img src="./assets/img/teleporter_visual.png" style="height:60px;" alt="globe icon">
-                      <p>
-                        <strong>Warp to E2 Location</strong>
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
+          </article>
+          <article class="colony-card reveal">
+            <div class="colony-media">
+              <img src="./assets/img/peach.png" alt="Peach emblem">
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/wave.png" style="height:250px;" alt="3d fish">
-              <div class="title">
-                <h3>Etherea Floating Colony</h3>
+            <div class="colony-body">
+              <h3>Akrotiri &ldquo;Peach&rdquo;</h3>
+              <p>On the southern border of the beautiful island of Cyprus lies a massive city.</p>
+              <div class="colony-actions">
+                <button class="btn btn-primary btn-sm" type="button" data-dialog="dialog-peach">Discover</button>
+                <a class="btn btn-ghost btn-sm" href="https://www.youtube.com/watch?v=XAMHa9ZAcXM" target="_blank" rel="noopener noreferrer">Trailer</a>
               </div>
-              <div class="text">
-                <span>Be as water my friend.</span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <button class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#ethereaModal1">Discover</button>
-                    <a href="https://www.youtube.com/watch?v=PAKxTvr-GZ8" target="_blank" rel="noopener noreferrer" class="a-btn">Trailer</a>
-                  </div>
-                </div>
-                <div class="row pt-5">
-                  <div class="col-lg-12">
-                    <a href="https://dev.tp.city/etherea" target="_blank" rel="noopener noreferrer">
-                      <img src="./assets/img/teleporter_visual.png" style="height:60px;" alt="globe icon">
-                      <p>
-                        <strong>Warp to E2 Location</strong>
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <a class="warp-link" href="https://e2.me/peach" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/teleporter_visual.png" alt="">
+                Warp to E2 Location
+              </a>
             </div>
-          </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/crown.png" style="height:250px;" alt="3d peach">
-              <div class="title">
-                <h3>AGV's San Marino</h3>
-              </div>
-              <div class="text">
-                <span>Our biggest flex.</span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <button class="btn btn-primary btn-md" data-bs-toggle="modal" data-bs-target="#agvsModal1">Discover</button>
-                    <button disabled class="btn btn-primary btn-md">Trailer</button>
-                  </div>
-                </div>
-                <div class="row pt-5">
-                  <div class="col-lg-12">
-                    <a href="https://e2.me/agv-sanmarino" target="_blank" rel="noopener noreferrer">
-                      <img src="./assets/img/teleporter_visual.png" style="height:60px;" alt="globe icon">
-                      <p>
-                        <strong>Warp to E2 Location</strong>
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
+          </article>
+          <article class="colony-card reveal">
+            <div class="colony-media">
+              <img src="./assets/img/elephant.png" alt="Elephant emblem">
             </div>
-          </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/tbd.png" style="height:250px;" alt="3d elephant">
-              <div class="title">
-                <h3>Coming Soon...</h3>
+            <div class="colony-body">
+              <h3>Bangui</h3>
+              <p>Large terrains — infinite possibilities. Welcome to our African paradise.</p>
+              <div class="colony-actions">
+                <button class="btn btn-primary btn-sm" type="button" data-dialog="dialog-bangui">Discover</button>
+                <a class="btn btn-ghost btn-sm" href="https://www.youtube.com/watch?v=PLmqm52hsHw" target="_blank" rel="noopener noreferrer">Trailer</a>
               </div>
-              <div class="text">
-                <span>More to be revealed later.</span>
-              </div>
+              <a class="warp-link" href="https://e2.me/bangui" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/teleporter_visual.png" alt="">
+                Warp to E2 Location
+              </a>
             </div>
-          </div>
+          </article>
+          <article class="colony-card reveal">
+            <div class="colony-media">
+              <img src="./assets/img/wave.png" alt="Wave emblem">
+            </div>
+            <div class="colony-body">
+              <h3>Etherea Floating Colony</h3>
+              <p>Be as water, my friend.</p>
+              <div class="colony-actions">
+                <button class="btn btn-primary btn-sm" type="button" data-dialog="dialog-etherea">Discover</button>
+                <a class="btn btn-ghost btn-sm" href="https://www.youtube.com/watch?v=PAKxTvr-GZ8" target="_blank" rel="noopener noreferrer">Trailer</a>
+              </div>
+              <a class="warp-link" href="https://e2.me/etherea" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/teleporter_visual.png" alt="">
+                Warp to E2 Location
+              </a>
+            </div>
+          </article>
+          <article class="colony-card reveal">
+            <div class="colony-media">
+              <img src="./assets/img/crown.png" alt="Crown emblem">
+            </div>
+            <div class="colony-body">
+              <h3>AGV's San Marino</h3>
+              <p>Our biggest flex.</p>
+              <div class="colony-actions">
+                <button class="btn btn-primary btn-sm" type="button" data-dialog="dialog-sanmarino">Discover</button>
+              </div>
+              <a class="warp-link" href="https://e2.me/agv-sanmarino" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/img/teleporter_visual.png" alt="">
+                Warp to E2 Location
+              </a>
+            </div>
+          </article>
+          <article class="colony-card reveal">
+            <div class="colony-media">
+              <img src="./assets/img/tbd.png" alt="Mystery emblem">
+            </div>
+            <div class="colony-body">
+              <h3>Coming Soon&hellip;</h3>
+              <p>More to be revealed later.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-    <!-- Vampire Wars -->
-    <section class="projects-section-vamp bg-offblack" id="vampire">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">
-              <span class="colored-red">\\</span> Vampire Wars <span class="colored-red">//</span>
-            </h2>
-            <p class="text-white-50"> Play a new genre strategy game where you control Crypts, Vampires, and Territory in the form of NFTs on an Earth sized map. <br>
-              <br>
-              <strong>Founded by our very own AGV Team Member Catalin.</strong>
-            </p>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-12">
-            <a href="https://twitter.com/Vampire_Wars" target="_blank" rel="noopener noreferrer" class="a-btn">Twitter</a>
-            <a href="https://discord.gg/VAPbWWh8AU" target="_blank" rel="noopener noreferrer" class="a-btn">Discord</a>
-          </div>
-          <p>
-            <br>
-          </p>
-        </div>
-        <div class="row text-center">
-          <iframe height="640" src="https://www.youtube.com/embed/JkdCm1HUDH0" title="Vampire Wars - Lore Trailer" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-      </div>
-    </section>
+
     <!-- Partners -->
-    <section class="projects-section bg-black" id="partners">
+    <section class="section section-raised" id="partners">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-12 mx-auto">
-            <h2 class="text-white mb-4">
-              <span class="colored-red">\\</span> Partners <span class="colored-red">//</span>
-            </h2>
-            <p class="text-white-50"> We have connections across industry verticals. <br>
-              <br>
-              <strong>We love our friends.</strong>
-            </p>
-          </div>
+        <div class="section-head reveal">
+          <p class="eyebrow">Partners</p>
+          <h2>We love our friends</h2>
+          <p class="lede">We have connections across industry verticals.</p>
         </div>
-        <div class="row text-center pt-5">
-          <div class="col-lg-4 mx-auto pb-5">
-            <div class="box-part text-center">
-              <p>
-                <a href="https://dev.10pow6.com" target="_blank" rel="noopener noreferrer">
-                  <img src="./assets/img/10pow6.png" style="height:120px" alt="10pow6 logo">
-                  <br>
-                  <br> 10pow6 </a>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 mx-auto pb-5">
-            <div class="box-part text-center">
-              <p>
-                <a href="https://earth2biomes.com/" target="_blank" rel="noopener noreferrer">
-                  <img src="./assets/img/e2biomes.png" style="height:120px" alt="10pow6 logo">
-                  <br>
-                  <br>Earth 2 Biomes </a>
-                <br>
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 mx-auto pb-5">
-            <div class="box-part text-center">
-              <p>
-                <a href="https://www.twitch.tv/kingtechops/videos?filter=clips&range=7d" target="_blank" rel="noopener noreferrer">
-                  <img src="./assets/img/kto.png" style="height:120px" alt="10pow6 logo">
-                  <br>
-                  <br>King Tech Ops </a>
-              </p>
-            </div>
-          </div>
+        <div class="partner-grid">
+          <a class="partner-card reveal" href="https://dev.10pow6.com" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/img/10pow6.png" alt="10pow6 logo">
+            10pow6
+          </a>
+          <a class="partner-card reveal" href="https://earth2biomes.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/img/e2biomes.png" alt="Earth 2 Biomes logo">
+            Earth 2 Biomes
+          </a>
+          <a class="partner-card reveal" href="https://www.twitch.tv/kingtechops/videos?filter=clips&amp;range=7d" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/img/kto.png" alt="King Tech Ops logo">
+            King Tech Ops
+          </a>
         </div>
       </div>
     </section>
-    <!-- Modal: Sea Lion -->
-    <div class="modal fade" id="seaModal1" tabindex="-1" aria-labelledby="seaModal1Label" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Sea Lion Colony</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+    <!-- Colony dialogs -->
+    <dialog class="colony-dialog" id="dialog-sealion" aria-labelledby="dialog-sealion-title">
+      <div class="dialog-head">
+        <h3 id="dialog-sealion-title">Sea Lion Colony</h3>
+        <button class="dialog-close" type="button" aria-label="Close">&times;</button>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-row">
+          <img src="./assets/img/colonies/sea1.jpg" alt="Sea Lion colony build">
+          <div>
+            <h4>For the Sea Lion</h4>
+            <p>We love our co-inhabitants, the sea lion. In the long run, we want to generate income that can be donated to charity organizations supporting the health and well being of sea lions in the real world.</p>
           </div>
-          <div class="modal-body">
-            <div class="row justify-content-center g-0 mb-5 mb-lg-0">
-              <div class="col-lg-6">
-                <img class="img-fluid" src="./assets/img/colonies/sea1.jpg" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="bg-black text-center h-100 project">
-                  <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-start">
-                      <h4 class="text-white">For the Sea Lion</h4>
-                      <p class="mb-0 text-white-50">We love our co-inhabitants, the sea lion. In the long run, we want to generate income that can be donated to charity organizations supporting the health and well being of sea lions in the real world.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-center g-0">
-              <div class="col-lg-6">
-                <img class="img-fluid" src="./assets/img/colonies/sea2.jpg" alt="">
-              </div>
-              <div class="col-lg-6 order-lg-first">
-                <div class="bg-black text-center h-100 project">
-                  <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-end">
-                      <h4 class="text-white">Ready For You To Build</h4>
-                      <p class="mb-0 text-white-50">This colony features a broad spectrum of pre-built structures that can be filled and claimed. Join us on in this exciting adventure.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="dialog-row">
+          <img src="./assets/img/colonies/sea2.jpg" alt="Sea Lion colony structures">
+          <div>
+            <h4>Ready For You To Build</h4>
+            <p>This colony features a broad spectrum of pre-built structures that can be filled and claimed. Join us in this exciting adventure.</p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Modal: Peach -->
-    <div class="modal fade" id="peachModal1" tabindex="-1" aria-labelledby="peachModal1Label" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Akrotiri "Peach" Colony</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </dialog>
+    <dialog class="colony-dialog" id="dialog-peach" aria-labelledby="dialog-peach-title">
+      <div class="dialog-head">
+        <h3 id="dialog-peach-title">Akrotiri &ldquo;Peach&rdquo; Colony</h3>
+        <button class="dialog-close" type="button" aria-label="Close">&times;</button>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-row">
+          <img src="./assets/img/colonies/peach1.jpg" alt="Akrotiri Peach colony build">
+          <div>
+            <h4>Juicy resources are ready to be harvested</h4>
+            <p>Our city spans multiple terrain types. Our strategic location and size will help us become a modern, gorgeous, trading hub.</p>
           </div>
-          <div class="modal-body">
-            <div class="row justify-content-center g-0 mb-5 mb-lg-0">
-              <div class="col-lg-6">
-                <img class="img-fluid" src="./assets/img/colonies/peach1.jpg" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="bg-black text-center h-100 project">
-                  <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-start">
-                      <h4 class="text-white">Juicy resources are ready to be harvested.</h4>
-                      <p class="mb-0 text-white-50">Our city spans multiple terrain types. Our strategic location and size will help us become a modern, gorgeous, trading hub.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-center g-0">
-              <div class="col-lg-6">
-                <img class="img-fluid" src="./assets/img/colonies/peach2.jpg" alt="">
-              </div>
-              <div class="col-lg-6 order-lg-first">
-                <div class="bg-black text-center h-100 project">
-                  <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-end">
-                      <h4 class="text-white">A Grand Scale</h4>
-                      <p class="mb-0 text-white-50">Spanning from the west all the way to the southern tip, this massive city sprawl is ready for you.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="dialog-row">
+          <img src="./assets/img/colonies/peach2.jpg" alt="Akrotiri Peach colony sprawl">
+          <div>
+            <h4>A Grand Scale</h4>
+            <p>Spanning from the west all the way to the southern tip, this massive city sprawl is ready for you.</p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Modal: Bangui -->
-    <div class="modal fade" id="banguiModal1" tabindex="-1" aria-labelledby="banguiModal1Label" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Bangui Colony</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </dialog>
+    <dialog class="colony-dialog" id="dialog-bangui" aria-labelledby="dialog-bangui-title">
+      <div class="dialog-head">
+        <h3 id="dialog-bangui-title">Bangui Colony</h3>
+        <button class="dialog-close" type="button" aria-label="Close">&times;</button>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-row">
+          <img src="./assets/img/colonies/bangui1.jpg" alt="Bangui colony build">
+          <div>
+            <h4>A Haven in the Desert</h4>
+            <p>In the midst of this sunny plane, a huge arenaceous colony is built on a sandy platform, extending to both river and hill.</p>
           </div>
-          <div class="modal-body">
-            <div class="row justify-content-center g-0 mb-5 mb-lg-0">
-              <div class="col-lg-6">
-                <img class="img-fluid" src="./assets/img/colonies/bangui1.jpg" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="bg-black text-center h-100 project">
-                  <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-start">
-                      <h4 class="text-white">A Haven in the Desert</h4>
-                      <p class="mb-0 text-white-50">In the midst of this sunny plane, a huge arenaceous colony is built on a sandy platform, extending to both river and hill.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-center g-0">
-              <div class="col-lg-6">
-                <img class="img-fluid" src="./assets/img/colonies/bangui2.jpg" alt="">
-              </div>
-              <div class="col-lg-6 order-lg-first">
-                <div class="bg-black text-center h-100 project">
-                  <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-end">
-                      <h4 class="text-white">Built to Scale</h4>
-                      <p class="mb-0 text-white-50">If you are looking for a colony which has written "expansion" in its DNA, you are welcome to join.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="dialog-row">
+          <img src="./assets/img/colonies/bangui2.jpg" alt="Bangui colony expansion">
+          <div>
+            <h4>Built to Scale</h4>
+            <p>If you are looking for a colony which has written &ldquo;expansion&rdquo; in its DNA, you are welcome to join.</p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Modal: Etherea -->
-    <div class="modal fade" id="ethereaModal1" tabindex="-1" aria-labelledby="ethereaModal1Label" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Etherea Floating Colony</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </dialog>
+    <dialog class="colony-dialog" id="dialog-etherea" aria-labelledby="dialog-etherea-title">
+      <div class="dialog-head">
+        <h3 id="dialog-etherea-title">Etherea Floating Colony</h3>
+        <button class="dialog-close" type="button" aria-label="Close">&times;</button>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-row">
+          <img src="./assets/img/colonies/etherea1.jpg" alt="Etherea floating colony">
+          <div>
+            <h4>Rising from the Ocean</h4>
+            <p>In this colony in Etherea, all things are floating, on water and in time. A powerhouse colony in the sea ready for your settlement.</p>
           </div>
-          <div class="modal-body">
-            <div class="row justify-content-center g-0 mb-5 mb-lg-0">
-              <div class="col-lg-6">
-                <img class="img-fluid" src="./assets/img/colonies/etherea1.jpg" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="bg-black text-center h-100 project">
-                  <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-start">
-                      <h4 class="text-white">Rising from the Ocean</h4>
-                      <p class="mb-0 text-white-50">In this colony in Etherea, all things are floating, on water and in time. A powerhouse colony in the sea ready for your settlement.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-center g-0">
-              <div class="col-lg-6">
-                <img class="img-fluid" src="./assets/img/colonies/etherea2.jpg" alt="">
-              </div>
-              <div class="col-lg-6 order-lg-first">
-                <div class="bg-black text-center h-100 project">
-                  <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-end">
-                      <h4 class="text-white">A Nod to Nature's Beauty</h4>
-                      <p class="mb-0 text-white-50">As fluid is water, as it is art. An artsy installment where you can live in the company of your creativity.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="dialog-row">
+          <img src="./assets/img/colonies/etherea2.jpg" alt="Etherea colony art installations">
+          <div>
+            <h4>A Nod to Nature's Beauty</h4>
+            <p>As fluid is water, as it is art. An artsy installment where you can live in the company of your creativity.</p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Modal: AGV San Marino -->
-    <div class="modal fade" id="agvsModal1" tabindex="-1" aria-labelledby="agvsModal1Label" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">AGV'S San Marino Colony</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </dialog>
+    <dialog class="colony-dialog" id="dialog-sanmarino" aria-labelledby="dialog-sanmarino-title">
+      <div class="dialog-head">
+        <h3 id="dialog-sanmarino-title">AGV's San Marino Colony</h3>
+        <button class="dialog-close" type="button" aria-label="Close">&times;</button>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-row">
+          <img src="./assets/img/colonies/agvs1.png" alt="AGV San Marino overview">
+          <div>
+            <h4>This is Huge</h4>
+            <p>That's right, it's the whole country.</p>
           </div>
-          <div class="modal-body">
-            <div class="row justify-content-center g-0 mb-5 mb-lg-0">
-              <div class="col-lg-6">
-                <img class="img-fluid" src="./assets/img/colonies/agvs1.png" alt="">
-              </div>
-              <div class="col-lg-6">
-                <div class="bg-black text-center h-100 project">
-                  <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-start">
-                      <h4 class="text-white">This is Huge</h4>
-                      <p class="mb-0 text-white-50">That's right, it's the whole country.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-center g-0">
-              <div class="col-lg-6">
-                <img class="img-fluid" src="./assets/img/colonies/agvs2.png" alt="">
-              </div>
-              <div class="col-lg-6 order-lg-first">
-                <div class="bg-black text-center h-100 project">
-                  <div class="d-flex h-100">
-                    <div class="project-text w-100 my-auto text-center text-lg-end">
-                      <h4 class="text-white">Massively Dense</h4>
-                      <p class="mb-0 text-white-50">A massive amount of players in a confined space.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div class="dialog-row">
+          <img src="./assets/img/colonies/agvs2.png" alt="AGV San Marino density">
+          <div>
+            <h4>Massively Dense</h4>
+            <p>A massive amount of players in a confined space.</p>
           </div>
         </div>
       </div>
-    </div>
+    </dialog>
+
     <!-- Footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top footer-section">
-      <div class="col-md-12 d-flex align-items-center">
-        <span class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">&nbsp;</span>
-        <span class=" mb-9 mb-md-0 text-muted"> &#169; 2023 Alchera Global Venture 2023; this website is created by a group of close friends that are passionate about technology. The website does not store any personal information. <br>Hosting provided by <a href="https://dev.10pow6.com" target="_blank" rel="noopener noreferrer">10POW6 LLC</a>; buy us a <a href="https://buy.stripe.com/cN2dUh9Jw0b1eo8000" target="_blank" rel="noopener noreferrer">Coffee</a>
-        </span>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img src="./assets/img/logo.png" alt="AGV">
+        <p class="footer-copy">&copy; 2026 Alchera Global Venture. This website is created by a group of close friends passionate about Earth 2 and technology. It does not store any personal information.<br>Hosting provided by <a href="https://dev.10pow6.com" target="_blank" rel="noopener noreferrer">10POW6 LLC</a> &middot; buy us a <a href="https://buy.stripe.com/cN2dUh9Jw0b1eo8000" target="_blank" rel="noopener noreferrer">coffee</a></p>
+        <div class="footer-social">
+          <a href="https://discord.com/invite/dg3PkWGyKB" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UCBYm6WwwbHh7Bt23j9K0Kyw" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

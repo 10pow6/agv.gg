@@ -1,379 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Meet the AGV team — a group of friends with a mixed bag of skills, united by Earth 2.">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Bootstrap Font Icon CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- Core CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="./assets/css/main.css" rel="stylesheet">
-    <title>Alchera Global Venture</title>
+    <title>Team — AGV</title>
   </head>
   <body>
-    <nav id="navbar-spy" class="navbar fixed-top navbar-expand-lg bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/img/logo.png" width="250" class="logo" alt="logo">
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="nav-brand" href="index.html">
+          <img src="./assets/img/logo.png" alt="AGV — Alchera Global Venture">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="index.html#vision">Vision</a>
-            <a class="nav-link" href="index.html#earth2">Earth 2</a>
-            <a class="nav-link" href="index.html#vampire">Vampire Wars</a>
-            <a class="nav-link" href="index.html#partners">Partners</a>
-            <a class="nav-link" href="events.html">Events</a>
-            <a class="nav-link" href="releases.html">Releases</a>
-            <a class="nav-link active" href="team.html">Team</a>
-            <a class="nav-link-icon" href="https://discord.com/invite/dg3PkWGyKB" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-discord"></i>
-            </a>
-            <a class="nav-link-icon" href="https://www.youtube.com/channel/UCBYm6WwwbHh7Bt23j9K0Kyw" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-youtube"></i>
-            </a>
-          </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#colonies">Colonies</a>
+          <a href="index.html#codex">Codex</a>
+          <a href="index.html#partners">Partners</a>
+          <a href="events.html">Events</a>
+          <a href="releases.html">Releases</a>
+          <a class="active" href="team.html">Team</a>
+          <a class="nav-icon" href="https://www.youtube.com/channel/UCBYm6WwwbHh7Bt23j9K0Kyw" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a class="btn btn-primary btn-sm nav-cta" href="https://discord.com/invite/dg3PkWGyKB" target="_blank" rel="noopener noreferrer">Join Discord</a>
         </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero hero-sub">
+      <div class="hero-image" style="background-image: url('./assets/img/poster.png');"></div>
+      <div class="hero-content">
+        <p class="hero-kicker">The People</p>
+        <h1>Team</h1>
+        <p class="hero-tagline">A group of friends with a mixed bag of skills.</p>
       </div>
-    </nav>
-    <!-- Masthead-->
-    <section class="projects-section-sea">
-      <header class="masthead" id="home">
-        <div class="container d-flex h-100 align-items-center">
-          <div class="mx-auto text-center">
-            <h1 class="mx-auto my-0 text-uppercase">
-              <span class="colored-red">/ </span> Team <span class="colored-red"> \</span>
-            </h1>
-            <p class="hero-tags">A group of friends with a mixed bag of skills.</p>
-            <p id="chevron-down">
-              <i class="bi bi-chevron-bar-down"></i>
-            </p>
-          </div>
-        </div>
-      </header>
     </section>
-    <!-- Team -->
-    <section class="projects-section">
+
+    <!-- Founders -->
+    <section class="section">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">
-              <span class="colored-red">\\</span> Founders <span class="colored-red">//</span>
-            </h2>
-            <p class="text-white-50">
-              <strong>Say hello to our very first members. </strong>
-            </p>
-          </div>
+        <div class="section-head reveal">
+          <p class="eyebrow">Founders</p>
+          <h2>Say hello to our very first members</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/catalin.jpg" style="height:250px;" alt="thug cat">
-              <div class="title">
-                <h3>Catalin</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Founder</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Experience in technology management and deep testing experience.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <img src="./assets/img/team/catalin.jpg" alt="Catalin">
+            <h3>Catalin</h3>
+            <span class="team-role">Founder</span>
+            <p>Experience in technology management and deep testing experience.</p>
           </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/alessandro.jpg" style="height:250px;border-radius: 50%;" alt="thug alessandro">
-              <div class="title">
-                <h3>Alessandro</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Founder</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Background in community management, customer relations, and PR.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="team-card reveal">
+            <img src="./assets/img/team/alessandro.jpg" alt="Alessandro">
+            <h3>Alessandro</h3>
+            <span class="team-role">Founder</span>
+            <p>Background in community management, customer relations, and PR.</p>
           </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/alex.png" style="height:250px;border-radius: 50%;" alt="btc image">
-              <div class="title">
-                <h3>Alex</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Founder</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Crypto evangelist from the start. Interested in all things decentralized.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="team-card reveal">
+            <img src="./assets/img/team/alex.png" alt="Alex">
+            <h3>Alex</h3>
+            <span class="team-role">Founder</span>
+            <p>Crypto evangelist from the start. Interested in all things decentralized.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="projects-section-team">
+
+    <!-- Technologists -->
+    <section class="section section-raised">
       <div class="container">
-        <div class="row text-center pt-5">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">
-              <span class="colored-red">\\</span> Technologists <span class="colored-red">//</span>
-            </h2>
-            <p class="text-white-50">
-              <strong>We speak code. </strong>
-            </p>
-          </div>
+        <div class="section-head reveal">
+          <p class="eyebrow">Technologists</p>
+          <h2>We speak code</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/peach_img.png" style="height:250px;border-radius: 50%;" alt="thug cat">
-              <div class="title">
-                <h3>butt</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Senior Partner</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>IT Professional with deep experience in large scale deployments and cloud.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <img src="./assets/img/team/peach_img.png" alt="butt">
+            <h3>butt</h3>
+            <span class="team-role">Senior Partner</span>
+            <p>IT professional with deep experience in large scale deployments and cloud.</p>
           </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/mihaj.png" style="height:250px;border-radius: 50%;" alt="thug alessandro">
-              <div class="title">
-                <h3>mihaj</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Senior Partner</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Amazing software developer. Busy creating cool new tools.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="team-card reveal">
+            <img src="./assets/img/team/mihaj.png" alt="mihaj">
+            <h3>mihaj</h3>
+            <span class="team-role">Senior Partner</span>
+            <p>Amazing software developer. Busy creating cool new tools.</p>
           </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/wasp.png" style="height:250px;border-radius: 50%;" alt="btc image">
-              <div class="title">
-                <h3>Wasp</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Senior Partner</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Software developer with a focus on finding the "unknown.jpg".</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="team-card reveal">
+            <img src="./assets/img/team/wasp.png" alt="Wasp">
+            <h3>Wasp</h3>
+            <span class="team-role">Senior Partner</span>
+            <p>Software developer with a focus on finding the &ldquo;unknown.jpg&rdquo;.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="projects-section">
+
+    <!-- Finance & Legal -->
+    <section class="section">
       <div class="container">
-        <div class="row text-center pt-5">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">
-              <span class="colored-red">\\</span> Mixed Media <span class="colored-red">//</span>
-            </h2>
-            <p class="text-white-50">
-              <strong>Art & treasure. </strong>
-            </p>
-          </div>
+        <div class="section-head reveal">
+          <p class="eyebrow">Finance &amp; Legal</p>
+          <h2>Dot the &ldquo;i&rdquo;, cross the &ldquo;t&rdquo;</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/corey.png" style="height:250px;border-radius: 50%;" alt="thug cat">
-              <div class="title">
-                <h3>Corey</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Senior Partner</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Brings a unique military background and passion for video games.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="team-grid team-grid-narrow">
+          <div class="team-card reveal">
+            <img src="./assets/img/team/ethereal.png" alt="Ethereal">
+            <h3>Ethereal</h3>
+            <span class="team-role">Senior Partner</span>
+            <p>Over a decade of experience in law and holds a deep love for video games.</p>
           </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/urslang.png" style="height:250px;border-radius: 50%;" alt="thug alessandro">
-              <div class="title">
-                <h3>Urslang</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Senior Partner</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Seasoned graphic artist with a focus on 3d modelling and movies.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/matteo.png" style="height:250px;border-radius: 50%;" alt="btc image">
-              <div class="title">
-                <h3>Matteo</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Senior Partner</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Our resident artist and dreamer. Explores the world through the stroke of a brush.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center pt-5">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">
-              <span class="colored-red">\\</span> Finance & Legal <span class="colored-red">//</span>
-            </h2>
-            <p class="text-white-50">
-              <strong>Dot the "i", cross the "t" and open some spreadsheets. </strong>
-            </p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/ethereal.png" style="height:250px;border-radius: 50%;" alt="thug cat">
-              <div class="title">
-                <h3>Ethereal</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Senior Partner</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Over a decade of experience in law and holds a deep love for video games.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/james.png" style="height:250px;border-radius: 50%;" alt="thug alessandro">
-              <div class="title">
-                <h3>James</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Senior Partner</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Brings to the table years of finance and investment banking experience.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="team-card reveal">
+            <img src="./assets/img/team/james.png" alt="James">
+            <h3>James</h3>
+            <span class="team-role">Senior Partner</span>
+            <p>Brings to the table years of finance and investment banking experience.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="projects-section-ethereal">
+
+    <!-- Lurkers -->
+    <section class="section section-raised">
       <div class="container">
-        <div class="row text-center pt-5">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">
-              <span class="colored-red">\\</span> Lurkers <span class="colored-red">//</span>
-            </h2>
-            <p class="text-white-50">
-              <strong>Quiet, but there. </strong>
-            </p>
-          </div>
+        <div class="section-head reveal">
+          <p class="eyebrow">Lurkers</p>
+          <h2>Quiet, but there</h2>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/wassily.png" style="height:250px;border-radius: 50%;" alt="thug cat">
-              <div class="title">
-                <h3>Wassily</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Senior Partner</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Software developer by day, and still software developer by night.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <img src="./assets/img/team/wassily.png" alt="Wassily">
+            <h3>Wassily</h3>
+            <span class="team-role">Senior Partner</span>
+            <p>Software developer by day, and still software developer by night.</p>
           </div>
-          <div class="col-lg-4 col-xs-12 pb-5">
-            <div class="box-part text-center">
-              <img src="./assets/img/team/shell.png" style="height:250px;border-radius: 50%;" alt="thug alessandro">
-              <div class="title">
-                <h3>Shell</h3>
-              </div>
-              <div class="text">
-                <span>
-                  <em>Senior Partner</em>
-                </span>
-                <div class="row pt-3">
-                  <div class="col-lg-12">
-                    <p>Shell has a razor focus on cybersecurity and emerging technologies.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="team-card reveal">
+            <img src="./assets/img/team/shell.png" alt="Shell">
+            <h3>Shell</h3>
+            <span class="team-role">Senior Partner</span>
+            <p>Shell has a razor focus on cybersecurity and emerging technologies.</p>
+          </div>
+          <div class="team-card reveal">
+            <img src="./assets/img/team/corey.png" alt="Corey">
+            <h3>Corey</h3>
+            <span class="team-role">Senior Partner</span>
+            <p>Brings a unique military background and passion for video games.</p>
+          </div>
+          <div class="team-card reveal">
+            <img src="./assets/img/team/urslang.png" alt="Urslang">
+            <h3>Urslang</h3>
+            <span class="team-role">Senior Partner</span>
+            <p>Seasoned graphic artist with a focus on 3d modelling and movies.</p>
+          </div>
+          <div class="team-card reveal">
+            <img src="./assets/img/team/matteo.png" alt="Matteo">
+            <h3>Matteo</h3>
+            <span class="team-role">Senior Partner</span>
+            <p>Our resident artist and dreamer. Explores the world through the stroke of a brush.</p>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top footer-section">
-      <div class="col-md-12 d-flex align-items-center">
-        <span class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">&nbsp;</span>
-        <span class=" mb-9 mb-md-0 text-muted"> &#169; 2023 Alchera Global Venture 2023; this website is created by a group of close friends that are passionate about technology. The website does not store any personal information. <br>Hosting provided by <a href="https://dev.10pow6.com" target="_blank" rel="noopener noreferrer">10POW6 LLC</a>; buy us a <a href="https://buy.stripe.com/cN2dUh9Jw0b1eo8000" target="_blank" rel="noopener noreferrer">Coffee</a>
-        </span>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img src="./assets/img/logo.png" alt="AGV">
+        <p class="footer-copy">&copy; 2026 Alchera Global Venture. This website is created by a group of close friends passionate about Earth 2 and technology. It does not store any personal information.<br>Hosting provided by <a href="https://dev.10pow6.com" target="_blank" rel="noopener noreferrer">10POW6 LLC</a> &middot; buy us a <a href="https://buy.stripe.com/cN2dUh9Jw0b1eo8000" target="_blank" rel="noopener noreferrer">coffee</a></p>
+        <div class="footer-social">
+          <a href="https://discord.com/invite/dg3PkWGyKB" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UCBYm6WwwbHh7Bt23j9K0Kyw" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
